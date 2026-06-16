@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a90f12">
+  <title>Delicias da Prazeres - Cardapio Digital</title>
+  <meta name="description" content="Cardapio digital do Delicias da Prazeres Rosarinho, com rodizio de carnes e self-service em Recife.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=qrstack-delicias-v1">
+</head>
+<body data-theme="rodizio">
+  <main class="menu-shell">
+    <header class="cover" id="inicio">
+      <picture class="cover-media" aria-hidden="true">
+        <img class="cover-hero-image" src="assets/logo-delicias-rosarinho-completa.png" alt="">
+      </picture>
+
+      <div class="cover-content">
+        <span class="menu-word">Cardapio Digital</span>
+        <h1 class="sr-only">Delicias da Prazeres Rosarinho</h1>
+      </div>
+    </header>
+
+    <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardapio">
+      <button class="tab is-active" id="tab-rodizio" type="button" role="tab" aria-selected="true" aria-controls="panel-rodizio" data-theme="rodizio"><span>01</span><b>Rodizio</b></button>
+      <button class="tab" id="tab-selfservice" type="button" role="tab" aria-selected="false" aria-controls="panel-selfservice" data-theme="buffet"><span>02</span><b>Self-Service</b></button>
+      <button class="tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-theme="bebidas"><span>03</span><b>Bebidas</b></button>
+      <button class="tab" id="tab-sobremesas" type="button" role="tab" aria-selected="false" aria-controls="panel-sobremesas" data-theme="sobremesas"><span>04</span><b>Sobremesas</b></button>
+      <button class="tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-theme="info"><span>05</span><b>Info</b></button>
+    </nav>
+
+    <section class="menu-status" aria-label="Resumo do cardapio">
+      <span>Rodizio de carnes e self-service</span>
+      <span>Rosarinho - Recife</span>
+    </section>
+
+    <div class="tab-panels">
+      <section class="panel is-active" id="panel-rodizio" role="tabpanel" aria-labelledby="tab-rodizio">
+        <div class="section-head">
+          <span>Servico da casa</span>
+          <h2>Rodizio de carnes</h2>
+          <p>Sequencia de cortes bovinos, cordeiro, suino, aves e peixes servidos a mesa para um almoco generoso, direto e sem pressa.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de carnes do rodizio">
+          <button class="subtab is-active" type="button" data-target="rodizio-bovino">Bovino</button>
+          <button class="subtab" type="button" data-target="rodizio-cordeiro">Cordeiro</button>
+          <button class="subtab" type="button" data-target="rodizio-suino">Suino</button>
+          <button class="subtab" type="button" data-target="rodizio-aves">Aves</button>
+          <button class="subtab" type="button" data-target="rodizio-peixes">Peixes</button>
+        </div>
+
+        <div class="subpanel is-active" id="rodizio-bovino">
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de cortes bovinos">
+            <button class="subtab is-active" type="button" data-target="bovino-nobres">Nobres</button>
+            <button class="subtab" type="button" data-target="bovino-brasa-lenta">Brasa Lenta</button>
+            <button class="subtab" type="button" data-target="bovino-tradicionais">Tradicionais</button>
+            <button class="subtab" type="button" data-target="bovino-especiais">Especiais</button>
+          </div>
+
+          <div class="subpanel is-active" id="bovino-nobres">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Picanha</h3><p>Corte nobre do rodizio, servido a mesa no ritmo da brasa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Corte nobre</span><h3>Bife de Chorizo</h3><p>Corte alto e intenso, presente na selecao principal da casa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Maciez</span><h3>Fraldinha</h3><p>Corte de fibras longas, com bom equilibrio entre suculencia e sabor.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-brasa-lenta" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Brasa lenta</span><h3>Costela</h3><p>Corte de sabor profundo, preparado para chegar macio e suculento.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Premium</span><h3>Costela Premium</h3><p>Versao especial da costela dentro da selecao de carnes da casa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Selecao</span><h3>Cupim</h3><p>Corte bovino marcante, servido em fatias no rodizio.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-tradicionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Tradicional</span><h3>Alcatra</h3><p>Opcao classica para quem prefere cortes bovinos mais suaves.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Selecao</span><h3>Cortes bovinos do dia</h3><p>Variacoes servidas conforme a sequencia do salao.</p></div><strong>Incluso</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="bovino-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Especial</span><h3>File com Queijo</h3><p>File preparado com queijo, uma das selecoes destacadas pela casa.</p></div><strong>Incluso</strong></article>
+              <article class="menu-item"><div><span>Curadoria</span><h3>Cortes especiais</h3><p>Itens de rotacao para completar a experiencia do rodizio.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="rodizio-cordeiro" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Cordeiro</span><h3>Paleta de Cordeiro</h3><p>Corte de cordeiro destacado pela casa, com sabor marcante e preparo cuidadoso.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Selecao</span><h3>Cortes de cordeiro</h3><p>Opcoes servidas dentro da sequencia do rodizio, conforme disponibilidade.</p></div><strong>Incluso</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="rodizio-suino" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Suino</span><h3>Porco</h3><p>Corte suino presente na selecao oficial de carnes do rodizio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Brasa</span><h3>Suinos da casa</h3><p>Preparos suinos para alternar com cortes bovinos e cordeiro.</p></div><strong>Incluso</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="rodizio-aves" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Aves</span><h3>Frango</h3><p>Opcao leve da sequencia, preparada para equilibrar o rodizio.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Brasa</span><h3>Aves do dia</h3><p>Preparos variaveis para alternar com bovinos, cordeiro e suino.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="rodizio-peixes" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Peixes</span><h3>Peixe</h3><p>Alternativa servida dentro da variedade da casa para equilibrar a sequencia da brasa.</p></div><strong>Incluso</strong></article>
+            <article class="menu-item"><div><span>Leve</span><h3>Peixe da casa</h3><p>Opcao para quem quer equilibrar a sequencia da brasa com um corte mais leve.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-selfservice" role="tabpanel" aria-labelledby="tab-selfservice" hidden>
+        <div class="section-head">
+          <span>Self-service</span>
+          <h2>Self-service completo</h2>
+          <p>Proteinas, massas, guarnicoes, saladas e frios para montar o prato com praticidade, variedade e um almoco bem servido.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias do self-service">
+          <button class="subtab is-active" type="button" data-target="selfservice-proteinas">Proteinas</button>
+          <button class="subtab" type="button" data-target="selfservice-massas">Massas</button>
+          <button class="subtab" type="button" data-target="selfservice-guarnicoes">Guarnicoes</button>
+          <button class="subtab" type="button" data-target="selfservice-saladas">Saladas</button>
+          <button class="subtab" type="button" data-target="selfservice-frios">Frios</button>
+        </div>
+
+        <div class="subpanel is-active" id="selfservice-proteinas">
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de proteinas do self-service">
+            <button class="subtab is-active" type="button" data-target="proteinas-frutos-mar">Frutos do Mar</button>
+            <button class="subtab" type="button" data-target="proteinas-aves">Aves</button>
+            <button class="subtab" type="button" data-target="proteinas-carnes">Carnes</button>
+            <button class="subtab" type="button" data-target="proteinas-regionais">Regionais</button>
+          </div>
+
+          <div class="subpanel is-active" id="proteinas-frutos-mar">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutos do mar</span><h3>Camarao</h3><p>Item quente destacado entre os preparos mais caprichados do buffet.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Frutos do mar</span><h3>Moqueca</h3><p>Preparo regional para compor o prato junto das carnes e guarnicoes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Peixe</span><h3>Peixe ao molho</h3><p>Alternativa mais leve dentro da selecao quente.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-aves" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Frango a Parmegiana</h3><p>Classico de almoco para acompanhar arroz, massas e saladas.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Forno</span><h3>Frango assado</h3><p>Opcao de ave para compor o prato com guarnicoes e saladas.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Molho</span><h3>Frango ao molho</h3><p>Preparacao quente para acompanhar arroz, pure e legumes.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-carnes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Carne ao molho</h3><p>Opcao quente para montar o prato com guarnicoes e saladas.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Caseiro</span><h3>Carne de panela</h3><p>Preparo classico, macio e bem servido com arroz e farofa.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Moida</span><h3>Escondidinho</h3><p>Preparo regional que pode aparecer como opcao quente do dia.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="proteinas-regionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Tradicional</span><h3>Feijoada</h3><p>Receita forte da casa, com acompanhamentos essenciais.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Charque acebolada</h3><p>Classico para acompanhar baiao de dois e farofa.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Preparo do dia</h3><p>Curadoria quente da cozinha com receitas regionais variaveis.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="selfservice-massas" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de massas do self-service">
+            <button class="subtab is-active" type="button" data-target="massas-molhos">Molhos</button>
+            <button class="subtab" type="button" data-target="massas-forno">Forno</button>
+            <button class="subtab" type="button" data-target="massas-do-dia">Do Dia</button>
+          </div>
+
+          <div class="subpanel is-active" id="massas-molhos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Molhos</span><h3>Penne ao molho branco</h3><p>Massa cremosa para acompanhar proteinas e guarnicoes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Espaguete a bolonhesa</h3><p>Classico de almoco, servido com molho de carne.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Massa ao sugo</h3><p>Opcao simples e leve para compor com proteinas da casa.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="massas-forno" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opcao gratinada para compor o prato junto dos itens quentes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Forno</span><h3>Macarrao gratinado</h3><p>Preparo cremoso de forno para acompanhar carnes e saladas.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="massas-do-dia" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Do dia</span><h3>Massa especial</h3><p>Preparo variavel conforme a curadoria diaria da cozinha.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Do dia</span><h3>Molho especial</h3><p>Molho escolhido pela cozinha para complementar a estacao de massas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="selfservice-guarnicoes" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de guarnicoes do self-service">
+            <button class="subtab is-active" type="button" data-target="guarnicoes-regionais">Regionais</button>
+            <button class="subtab" type="button" data-target="guarnicoes-bases">Bases</button>
+            <button class="subtab" type="button" data-target="guarnicoes-quentes">Quentes</button>
+            <button class="subtab" type="button" data-target="guarnicoes-feijoada">Feijoada</button>
+          </div>
+
+          <div class="subpanel is-active" id="guarnicoes-regionais">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Pernambuco</span><h3>Baiao de dois</h3><p>Receita regional destacada no almoco da casa.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Farofa</h3><p>Acompanhamento essencial para carnes e feijoada.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Regional</span><h3>Macaxeira</h3><p>Guarnicao nordestina para acompanhar carnes e pratos quentes.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-bases" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base classica para carnes, frutos do mar e pratos quentes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Arroz a grega</h3><p>Guarnicao colorida para acompanhar proteinas e saladas.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Feijao</h3><p>Base quente para compor pratos regionais e classicos.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-quentes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Quente</span><h3>Pure de batatas</h3><p>Guarnicao cremosa para acompanhar frango, carne e peixe.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Leve</span><h3>Legumes salteados</h3><p>Opcao quente e leve para equilibrar o prato.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Crocante</span><h3>Batata rustica</h3><p>Guarnicao para proteinas, massas e pratos regionais.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="guarnicoes-feijoada" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Feijoada</span><h3>Acompanhamentos essenciais</h3><p>Itens para montar a feijoada da forma que preferir.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Feijoada</span><h3>Couve, farofa e laranja</h3><p>Classicos para finalizar o prato de feijoada.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="selfservice-saladas" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de saladas do self-service">
+            <button class="subtab is-active" type="button" data-target="saladas-folhas">Folhas</button>
+            <button class="subtab" type="button" data-target="saladas-compostas">Compostas</button>
+            <button class="subtab" type="button" data-target="saladas-graos">Graos</button>
+            <button class="subtab" type="button" data-target="saladas-molhos">Molhos</button>
+          </div>
+
+          <div class="subpanel is-active" id="saladas-folhas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frescor</span><h3>Selecao de saladas</h3><p>Variedade colorida para abrir a refeicao ou equilibrar o prato.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Folhas</span><h3>Folhas verdes</h3><p>Mix fresco para entradas leves.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Leves</span><h3>Entradas frias</h3><p>Opcoes para acompanhar um almoco mais leve.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-compostas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Salada de maionese</h3><p>Item tradicional para acompanhar carnes e pratos quentes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Classico</span><h3>Salpicao</h3><p>Preparacao fria para compor a mesa de saladas.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Legumes</span><h3>Legumes frios</h3><p>Opcao simples e leve para entradas.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-graos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Graos</span><h3>Salada de graos</h3><p>Opcao fria com textura e frescor para variar o prato.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Proteica</span><h3>Grao-de-bico</h3><p>Salada fria para compor pratos mais leves.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="saladas-molhos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Acompanhamento fresco para carnes da brasa e feijoada.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Molhos</span><h3>Molhos para salada</h3><p>Opcoes para finalizar folhas, legumes e entradas frias.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="selfservice-frios" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de frios do self-service">
+            <button class="subtab is-active" type="button" data-target="frios-queijos">Queijos</button>
+            <button class="subtab" type="button" data-target="frios-embutidos">Frios</button>
+            <button class="subtab" type="button" data-target="frios-antepastos">Antepastos</button>
+            <button class="subtab" type="button" data-target="frios-frutas">Frutas</button>
+          </div>
+
+          <div class="subpanel is-active" id="frios-queijos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Queijos</span><h3>Queijos variados</h3><p>Opcoes para montar entrada ou acompanhar saladas e pratos leves.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Mesa fria</span><h3>Queijos e frios</h3><p>Selecao fria para complementar o almoco da casa.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-embutidos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frios</span><h3>Presunto, salame e frios fatiados</h3><p>Classicos de mesa fria para comecar a refeicao.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Frios</span><h3>Selecao de embutidos</h3><p>Itens frios para montar entradas e pratos leves.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-antepastos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Antepastos</span><h3>Azeitonas e conservas</h3><p>Itens frios para compor entradas e combinacoes leves.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Entradas</span><h3>Pates e pastas frias</h3><p>Opcoes para acompanhar paes, saladas e queijos.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="frios-frutas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Frutas frescas</h3><p>Opcao leve para equilibrar frios, queijos e pratos quentes.</p></div><strong>Self-service</strong></article>
+              <article class="menu-item"><div><span>Leve</span><h3>Frutas da estacao</h3><p>Selecao variavel para entrada ou fechamento mais leve.</p></div><strong>Self-service</strong></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
+        <div class="section-head">
+          <span>Bar da casa</span>
+          <h2>Bebidas e coqueteis</h2>
+          <p>Caipirinhas, drinks classicos, destilados e bebidas sem alcool para acompanhar o rodizio ou o almoco do dia.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de bebidas">
+          <button class="subtab is-active" type="button" data-target="bebidas-caipirinhas">Caipirinhas</button>
+          <button class="subtab" type="button" data-target="bebidas-drinks">Drinks</button>
+          <button class="subtab" type="button" data-target="bebidas-destilados">Destilados</button>
+          <button class="subtab" type="button" data-target="bebidas-sem-alcool">Sem alcool</button>
+        </div>
+
+        <div class="subpanel is-active" id="bebidas-caipirinhas">
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de caipirinhas">
+            <button class="subtab is-active" type="button" data-target="caipirinhas-classicas">Classicas</button>
+            <button class="subtab" type="button" data-target="caipirinhas-frutas">Frutas</button>
+            <button class="subtab" type="button" data-target="caipirinhas-regionais">Regionais</button>
+            <button class="subtab" type="button" data-target="caipirinhas-especiais">Especiais</button>
+          </div>
+
+          <div class="subpanel is-active" id="caipirinhas-classicas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Base</span><h3>Caipirinha classica</h3><p>Preparo tradicional para abrir a refeicao junto das entradas e carnes.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Limao</span><h3>Caipirinha de limao</h3><p>Versao refrescante e direta para acompanhar almoco e sobremesas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-frutas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas vermelhas</h3><p>Variacao frutada para quem gosta de drinks mais aromaticos.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipirinha de frutas amarelas</h3><p>Opcao alegre para acompanhar carnes, self-service e sobremesas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-regionais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Regional</span><h3>Caipirinha de caju</h3><p>Opcao com fruta regional, conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Citrica</span><h3>Caipirinha de tangerina</h3><p>Variacao citrica para abrir o apetite.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="caipirinhas-especiais" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Especial</span><h3>Caipirinha da casa</h3><p>Preparo especial do bar, com rotacao de frutas e finalizacoes.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Do dia</span><h3>Fruta do dia</h3><p>Variacao preparada conforme as frutas frescas disponiveis.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-drinks" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de drinks">
+            <button class="subtab is-active" type="button" data-target="drinks-classicos">Classicos</button>
+            <button class="subtab" type="button" data-target="drinks-aperitivos">Aperitivos</button>
+            <button class="subtab" type="button" data-target="drinks-gin">Gin</button>
+          </div>
+
+          <div class="subpanel is-active" id="drinks-classicos">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Mojito</h3><p>Coquetel refrescante para acompanhar almoco ou sobremesa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Classico</span><h3>Martini</h3><p>Drink tradicional para quem prefere uma pedida mais seca.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="drinks-aperitivos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Spritz</span><h3>Aperol</h3><p>Drink leve e citrico para brindar antes ou durante a refeicao.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Classico</span><h3>Negroni</h3><p>Coquetel intenso para quem prefere sabores mais marcantes.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="drinks-gin" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Gin</span><h3>Gin tonica</h3><p>Classico aromatico para harmonizar com pratos leves e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Gin</span><h3>Gin da casa</h3><p>Preparo do bar com especiarias e finalizacao conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-destilados" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de destilados">
+            <button class="subtab is-active" type="button" data-target="destilados-whisky">Whisky</button>
+            <button class="subtab" type="button" data-target="destilados-gin-vodka">Gin e Vodka</button>
+            <button class="subtab" type="button" data-target="destilados-cachacas">Cachacas</button>
+          </div>
+
+          <div class="subpanel is-active" id="destilados-whisky">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Whisky</span><h3>Doses de whisky</h3><p>Selecao do bar para servir pura ou com gelo.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Whisky</span><h3>Whisky premium</h3><p>Rotulos para servir em dose ou acompanhar sobremesas intensas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="destilados-gin-vodka" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Vodka</span><h3>Vodkas</h3><p>Base para drinks ou dose, conforme carta da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Gin</span><h3>Gins</h3><p>Opcoes para gin tonica e outros preparos do bar.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="destilados-cachacas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Cachaca</span><h3>Cachacas</h3><p>Base para caipirinhas ou dose, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Brasil</span><h3>Cachacas especiais</h3><p>Selecao para degustar pura ou usar nos coqueteis da casa.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-sem-alcool" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de bebidas sem alcool">
+            <button class="subtab is-active" type="button" data-target="sem-alcool-mocktails">Mocktails</button>
+            <button class="subtab" type="button" data-target="sem-alcool-aguas">Aguas</button>
+            <button class="subtab" type="button" data-target="sem-alcool-sucos">Sucos</button>
+            <button class="subtab" type="button" data-target="sem-alcool-refrigerantes">Refrigerantes</button>
+            <button class="subtab" type="button" data-target="sem-alcool-cafes">Cafes</button>
+          </div>
+
+          <div class="subpanel is-active" id="sem-alcool-mocktails">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Zero alcool</span><h3>Mocktail da casa</h3><p>Preparo do bar com frutas, gelo e finalizacao aromatica.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Coquetel de frutas</h3><p>Bebida leve e frutada para acompanhar almoco e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Refrescante</span><h3>Soda italiana</h3><p>Opcao gaseificada e aromatica sem alcool.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Citrico</span><h3>Limonada especial</h3><p>Bebida leve para acompanhar carnes e saladas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-aguas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Agua</span><h3>Agua mineral</h3><p>Com ou sem gas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Mesa</span><h3>Agua com gas</h3><p>Boa opcao para acompanhar carnes e sobremesas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-sucos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Frutas</span><h3>Sucos naturais</h3><p>Sabores variados conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Sucos especiais</h3><p>Combinacoes de frutas para acompanhar o almoco e sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Natural</span><h3>Frutas frescas batidas</h3><p>Opcao variavel conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-refrigerantes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Classico</span><h3>Refrigerantes</h3><p>Opcoes tradicionais para acompanhar o rodizio.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Zero</span><h3>Refrigerantes zero</h3><p>Opcoes sem acucar, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="sem-alcool-cafes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Cafe</span><h3>Cafe espresso</h3><p>Boa pedida para fechar a refeicao ou acompanhar sobremesas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Cafe</span><h3>Cafe com leite</h3><p>Opcao suave para acompanhar doces e tortas.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-sobremesas" role="tabpanel" aria-labelledby="tab-sobremesas" hidden>
+        <div class="section-head">
+          <span>Final doce</span>
+          <h2>Sobremesas</h2>
+          <p>Classicos, doces regionais, tortas e sobremesas geladas para fechar o almoco com uma ultima boa impressao.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Categorias de sobremesas">
+          <button class="subtab is-active" type="button" data-target="sobremesas-classicas">Classicas</button>
+          <button class="subtab" type="button" data-target="sobremesas-regionais">Regionais</button>
+          <button class="subtab" type="button" data-target="sobremesas-tortas">Tortas</button>
+          <button class="subtab" type="button" data-target="sobremesas-geladas">Geladas</button>
+        </div>
+
+        <div class="subpanel is-active" id="sobremesas-classicas">
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Classico</span><h3>Pudim de leite</h3><p>Sobremesa direta e certeira para encerrar a refeicao.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Chocolate</span><h3>Petit gateau com sorvete</h3><p>Classico servido com sorvete.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-regionais" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Quente</span><h3>Cocada cremosa com sorvete</h3><p>Cocada cremosa servida quente, finalizada com sorvete.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Regional</span><h3>Bolo de rolo com sorvete</h3><p>Doce regional em versao de sobremesa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-tortas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Tortas</span><h3>Banoffee</h3><p>Opcao preparada diariamente para o final do almoco.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Tortas</span><h3>Red Velvet</h3><p>Torta cremosa para quem prefere uma finalizacao mais intensa.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Selecao</span><h3>Outras tortas do dia</h3><p>Rotacao de sabores conforme a producao da casa.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="sobremesas-geladas" hidden>
+          <div class="menu-list">
+            <article class="menu-item"><div><span>Sorvete</span><h3>Creme de papaia com licor de cassis</h3><p>Sobremesa refrescante para dias mais quentes.</p></div><strong>Consulte</strong></article>
+            <article class="menu-item"><div><span>Gelado</span><h3>Sundae</h3><p>Opcao doce e refrescante para fechar a refeicao.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" hidden>
+        <div class="section-head">
+          <span>Restaurante</span>
+          <h2>Informacoes</h2>
+          <p>Rosarinho, Recife - PE</p>
+        </div>
+        <div class="info-grid">
+          <article><span>Endereco</span><p>Rua Dr. Jose Maria, 848, Rosarinho</p></article>
+          <article><span>WhatsApp</span><p>(81) 99166-0700</p></article>
+          <article><span>Instagram</span><p>@delicias_rosarinho</p></article>
+          <article><span>Funcionamento</span><p>11h - 16h</p></article>
+        </div>
+      </section>
+    </div>
+
+    <footer class="menu-footer">
+      <div class="product-badge" aria-label="Um produto QrStack">
+        <div class="qrstack-lockup">
+          <span class="product-copy">Um produto</span>
+          <img class="qrstack-mark" src="assets/qrstack-mark.png?v=footer-light" alt="" aria-hidden="true">
+        </div>
+        <img class="qrstack-wordmark" src="assets/qrstack-wordmark.png?v=footer-light" alt="QrStack">
+      </div>
+      <div class="footer-brand">
+        <img src="assets/logo-delicias-rosarinho-completa.png" alt="Delicias da Prazeres Rosarinho">
+        <p>Delicias da Prazeres</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js?v=qrstack-delicias-v1"></script>
+</body>
+</html>
